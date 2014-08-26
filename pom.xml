@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.vdenotaris.spring</groupId>
-	<artifactId>spring-boot-security-saml-sample</artifactId>
+	<groupId>com.drillmap.galaxy</groupId>
+	<artifactId>security-saml-webapp</artifactId>
 	<version>1.0.0.FINAL</version>
-	<packaging>war</packaging>
+
+	<packaging>jar</packaging>
 
 	<name>Spring Boot and Spring Security SAML integration sample</name>
-	<description>Currently Spring Security SAML module doesn't provide a starter for Spring Boot. Moreover, its configuration is XML-based as of this writing. The aim of this project is to explain how to develop a Service Provider (SP) which uses Spring Boot (1.4.0) and Spring Security SAML Extention (1.0.0.RC2), by defining an annotation-based configuration (Java Configuration). Thymeleaf (2.1.1) is also used as template engine.</description>
-	<url>https://github.com/vdenotaris</url>
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-		</license>
-	</licenses>
-	<inceptionYear>2014</inceptionYear>
-	<developers>
-		<developer>
-			<id>vdenotaris</id>
-			<name>Vincenzo De Notaris</name>
-			<email>dev at vdenotaris.com</email>
-			<timezone>+1</timezone>
-		</developer>
-	</developers>
-	<contributors>
-		<contributor>
-			<name>Vladimír Schäfer</name>
-		</contributor>
-	</contributors>
+
+	<description>
+        Currently Spring Security SAML module doesn't provide a starter for Spring Boot. Moreover,
+        its configuration is XML-based as of this writing. The aim of this project is to explain how to develop
+        a Service Provider (SP) which uses Spring Boot (1.4.0) and Spring Security SAML Extention (1.0.0.RC2),
+        by defining an annotation-based configuration (Java Configuration). Thymeleaf (2.1.1) is also used as
+        template engine.
+        </description>
+
 
 	<properties>
 		<start-class>com.vdenotaris.spring.sp.Application</start-class>
@@ -81,12 +70,6 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-	<scm>
-		<connection>scm:git:git@github.com:vdenotaris/spring-boot-security-saml-sample.git</connection>
-		<url>scm:git:git@github.com:vdenotaris/spring-boot-security-saml-sample.git</url>
-		<developerConnection>scm:git:git@github.com:vdenotaris/spring-boot-security-saml-sample.git</developerConnection>
-	</scm>
 
 	<build>
 		<plugins>
